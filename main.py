@@ -1,7 +1,7 @@
 import requests
 import json
 
-slack_webhook_url = "slack_api"
+slack_url = "api여기다가 쓰기"
 
 def sendSlackhook(strText):
     headers={
@@ -12,7 +12,7 @@ def sendSlackhook(strText):
         "text" : strText
     }
 
-    res = requests.post(slack_webhook_url, headers=headers, data=json.dumps(data))
+    res = requests.post(slack_url, headers=headers, data=json.dumps(data))
 
     if res.status_code == 200:
         return "ok"
