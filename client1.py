@@ -1,7 +1,7 @@
 import requests
 import time
 
-url = "http://192.168.200.24:5000/data"
+url = "http://192.168.185.24:5001/data"
 
 while True:
     data = {"sensor": "temperature", "value": 22.5}
