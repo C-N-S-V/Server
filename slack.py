@@ -2,8 +2,8 @@ import requests
 import time
 import json
 
-slack_url = "slack_api"
-sensor_url = "http://192.168.185.24:5001/data"
+slack_url = "slack api"
+sensor_url = "sensor url"
 
 def send_slack_message(message):
     headers = {
